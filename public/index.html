@@ -1,0 +1,478 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>MyProfile</title>
+
+    <style>
+    header{
+        background: url(img/intro.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+        }
+    @media screen and (max-width: 670px){
+        header{
+        min-height: 500px;
+        }
+        .parallax-container {
+            max-height: 25vh;
+        }
+    }
+
+    #vnav{
+        background: url(img/city.jpg);
+        background-size: cover;
+        background-position: absolute;
+    }
+
+    .sidenav{
+        background-color: rgba(255, 248, 220, 0.768);
+    }
+
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }  
+
+    #hi{
+        background: url(stars.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #hye{
+        background-color: rgba(177, 226, 245, 0.637);
+    }
+    #hy{
+        background-color: lightcyan;
+    }
+
+    #bgimg{
+        background-image: url(img/stars.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    </style>
+</head>
+<body>
+
+    <header>
+    <!-- Navbar section-->
+    <div class="navbar-fixed">
+    <nav class="nav-wrapper transparent" id="vnav">
+        <div class="container">
+            <a href="#" class="brand-logo">Vinit V Soni</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#edu">Education </a></li>
+                <li><a href="#project">Projects </a></li>
+                <li><a href="#achievements">Achievements </a></li>
+                <li><a href="#contact">Contact </a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <!-- SideNav -->
+    <ul class="sidenav" id="mobile-links">
+        <li>
+            <div class="user-view">
+            <div class="background" id="bgimg">
+              <!--<img src="img/city.jpg">-->
+            </div>
+            <a href="#user"><img class="circle" src="img/profile.jpg"></a>
+            <a href="#name"><span class="white-text name">Vinit Soni</span></a>
+            <a href="#email"><span class="white-text email">vinitsoni1810@gmail.com</span></a>
+          </div>
+        </li>
+        <li><a href="#about"><i class="material-icons">person</i>About Me</a></li>
+        <li><a href="#edu"><i class="material-icons">book</i>Education </a></li>
+        <li><a href="#project"><i class="material-icons">source</i>Projects </a></li>
+        <li><a href="#achievements"><i class="material-icons">stars</i>Achievements </a></li>
+        <li><a href="#contact"><i class="material-icons">phone_iphone</i>Contact </a></li>
+    </ul>
+    </header>
+
+    <!-- About Me section-->
+    <section class="container section scrollspy" id="about">
+        <div class="row">
+            <div class="col s6 l4">
+                <img src="img/profile.jpg" alt="" class="circle responsive-img">
+            </div>
+            <div class="col s5 l6 offset-l2 offset-s1">
+                <h3 class="indigo-text text-darken-4">About Me</h3>
+                <p>Name : Vinit Soni</p>
+                <p>Qualification : BE (IT)</p>
+                <p>D.O.B : 18/04/1999</p>
+                <p>Blood Group : B-ve </p>
+                <p>Address: <Address>R/243 Anthony Creado Building, Gauthan No-2, Juhu, Mumbai-400049</Address></p> 
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stars.jpg" class="responsive-img" alt="Stars">
+        </div>
+    </div>
+
+    <!-- Education Section-->
+
+    <section class="container section scrollspy" id="edu">
+        <div class="row">
+            <!-- The first 3 columns-->
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">Education</h2>
+                <p>My entire educational journey has been taken in the institutes of Mumbai itself.</p>
+                <p>The following are the educational institutes from where i have gathered the knowledge to be what I am today.</p>
+            </div>
+
+            <!-- Next 4 columns for Tabs-->
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s4">
+                        <a href="#SSC" class="indigo-text text-darken-4">School</a>
+                    </li>
+                    <li class="tab col s4">
+                        <a href="#HSC" class="indigo-text text-darken-4">Jr.College</a>
+                    </li>
+                    <li class="tab col s4">
+                        <a href="#SEM" class="indigo-text text-darken-4">Deg.College</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="SSC">
+                    <p class="flow-text indigo-text text-darken-4">Institute : St Joseph's High School </p>
+
+                    <!-- Modal for Institute Pics-->
+                    <a href="#spic" class="btn modal-trigger indigo">
+                        <i class="material-icons">search</i>
+                    </a>
+                    <div class="modal" id="spic">
+                        <div class="modal-content">
+                            <img src="img/sjhs.jpg" class="tooltipped" alt="My school" data-tooltip="St Joseph's High School">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="modal-close btn indigo">Ok</a>
+                        </div>
+                    </div>
+                    <p>Score : <b>92.2%</b></p>
+                    <p>Year Of Passing : 2015 </p>
+                    <a href="#ssc" class="btn black modal-trigger">Certificate</a>
+                    <div class="modal" id="ssc">
+                        <div class="modal-content">
+                            <img src="img/ssc.jpg" alt="ssc Certificate">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="modal-close btn indigo">OK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12" id="HSC">
+                    <p class="flow-text indigo-text text-darken-4">Institute : Mithibai College </p>
+
+                    <!-- Modal for Institute Pics-->
+                    <a href="#hpic" class="btn modal-trigger indigo">
+                        <i class="material-icons">search</i>
+                    </a>
+                    <div class="modal" id="hpic">
+                        <div class="modal-content">
+                            <img src="img/mithibai.jpg" class="tooltipped" alt="My Jr. college" data-tooltip="Mithibai College">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="modal-close btn indigo">Ok</a>
+                        </div>
+                    </div>
+                    <p>Score : <b>88.15%</b></p>
+                    <p>Year Of Passing : 2017 </p>
+                    <a href="#hsc" class="btn black modal-trigger">Certificate</a>
+                    <div class="modal" id="hsc">
+                        <div class="modal-content">
+                            <img src="img/hsc.jpg" alt="hsc Certificate">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="modal-close btn indigo">OK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12" id="SEM">
+                    <p class="flow-text indigo-text text-darken-4">Institute : Thadomal Shahani College </p>
+
+                    <!-- Modal for Institute Pics-->
+                    <a href="#tpic" class="btn modal-trigger indigo">
+                        <i class="material-icons">search</i>
+                    </a>
+                    <div class="modal" id="tpic">
+                        <div class="modal-content">
+                            <img src="img/tsec.jpg" class="tooltipped" alt="My Degree College" data-tooltip="Thadomal Shahani College">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="modal-close btn indigo">Ok</a>
+                        </div>
+                    </div>
+                    <p>Score : <b>9.22 CGPI</b></p>
+                    <p>Year Of Passing : 2021 </p>
+                    <a href="#sem" class="btn black modal-trigger">Certificate</a>
+                    <div class="modal" id="sem">
+                        <div class="modal-content">
+                            <img src="img/sem.jpg" alt="sem Certificate">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="modal-close btn indigo">OK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/street.jpg" class="responsive-img" alt="Street">
+        </div>
+    </div>
+
+    <!-- Project section-->
+    
+    <section class="container section scrollspy" id="project">
+        <marquee behavior="scroll" direction="left" scrollamount="14"><h4>Working on new projects gives you the opportunity to learn and absorb new things.</h4></marquee>
+        <br><br>
+        <div class="row">
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title indigo-text text-darken-4">Car Rental Project</span>
+                        <p>Conceptualized & Created a website which helps citizens to rent car services for certain duration of time</p>
+                        <p>Worked with a team of 3 using technologies like HTML, CSS, JavaScript, Google API, jQuery, AJAX, PHP </p>
+                        <p>My responsibilities were to design the entire user interface along with integrating the website with Google API. Along with the integration of the website with the database was also implemented by me using PHP. </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Link to the Github Repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title indigo-text text-darken-4">Recruitment Portal</span>
+                        <p>Conceptualized & Created a Python application that offers both company and applicant a common interface for locating each other for hiring and applying for job respectively.</p>
+                        <p>Created a dual interface one each for company representative and the applicant using python libraries. </p>
+                        <p>The companies will be able to see the applicants who have selected their company as their first preference or second preference</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Link to the Github Repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title indigo-text text-darken-4">Smart Fire Extinguisher</span>
+                        <p>Created an IOT based device using Arduino NodeMcu, Fire sensor and a alarm and using Ubidots website</p>
+                        <p>In a team of 3, my job included writing the proper code for detection and alerting the user through mail and SMS</p>
+                        <p>The user who has installed this system will be able to get notifiaction whenever there is a fire break-out and also the nearby fire station is notified using this application</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Link to the Github Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stars.jpg" class="responsive-img" alt="Stars">
+        </div>
+    </div>
+
+    <!-- Achievement Section-->
+
+    <section class="container section scrollspy" id="achievements">
+        <marquee behavior="scroll" direction="left" scrollamount="14"><h4>There are no secrets to success. It is the result of preparation, hard work, and learning from failure</h4></marquee>
+        <br>
+        <h4 class="indigo-text text-darken-4 center-align">Competitions</h4>
+        <div class="row">
+            <div class="col s12 l5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/sih.jpg" alt="SIH">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Smart India Hackathon</span>
+                        <p>Our team HexHackers (I and my 5 other team members) participated in the SIH Competition with our project topic being License plate recognition system</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/sies.jpg" alt="SIES">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">SIES Project Exhibition</span>
+                        <p>I along with two other friends participatedand were shortlisted in the top 50 projects in the Exhibition. We had made a Hardware project based on the concept of <b>Death Ray</b> to purify water </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="indigo-text text-darken-4 center-align">Scholarship and Participation</h4>
+        <div class="row">
+            <div class="col s12 l5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/mtse1.jpg" alt="MTSE">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">MTSE Scholarship</span>
+                        <p>In this state-level Competition, I got a Scholarship from the government for securing a district rank of <b>6</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/csi.jpg" alt="CSI">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Computer Society of India - TSEC</span>
+                        <p>In my first year I had participated in the events organized by CSI. Then for the next two years I have been an active committee member of this society and my major role being an Assistant Creative Head. I had also taken 4 seminars on Python: For Beginners topic for over 200 students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="indigo-text text-darken-4 center-align">Extra-Curricular Activities</h4>
+        <div class="row">
+            <div class="col s12 l5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/marathon.jpg" alt="MARATHON">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">TSEC Marathon</span>
+                        <p>I had participated and successfully completed the 8km marathon of our college within a decent amount of time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/tree.jpg" alt="Tree Plantation">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Tree Plantation Drive</span>
+                        <p>In this Plantation drive we had contributed to the nature by planting over a 100 plant saplings in the Bandra Recalamation area</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/street.jpg" class="responsive-img" alt="Street">
+        </div>
+    </div>
+
+    <!-- Hobbies and Interest Section -->
+
+    <section class="container section scrollspy" id="hy">
+        <h4 class="center-align indigo-text text-darken-4">Hobbies & Interests</h4>
+        <ul class="collapsible">
+            <li>
+              <div class="collapsible-header z-depth-2"><i class="material-icons">sports_soccer</i>Football</div>
+              <div class="collapsible-body indigo-text"><span>I love playing football or any outdoor game. I had been part of my school team for 6 consecutive years and have played as a Goalkeeper and as a Defender</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header z-depth-2"><i class="material-icons">architecture</i>Drawing & Painting</div>
+              <div class="collapsible-body indigo-text"><span>In my spare time I like to draw and paint sceneries. I have also got an A grade in Drawing Intermediatory Exam. I have also done portrait sketching.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header z-depth-2"><i class="material-icons">engineering</i>Playing Chess</div>
+              <div class="collapsible-body indigo-text"><span>I have always been a chess player at my heart. I have participated in many chess tournaments and have won a few of them.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header z-depth-2"><i class="material-icons">psychology</i>Reading</div>
+                <div class="collapsible-body indigo-text"><span>Reading is something which helps me to take a detor from my routine. I love reading fictional, crime-thriller and mystery-solving books </span></div>
+              </li>
+          </ul>
+    </section>
+
+    <!-- Contact Section -->
+
+    <footer class="page-footer grey darken-2" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h4>My Resume</h4>
+                    <p>I hope this gives you a good insight on the various points in my life and career</p>
+                    <a href="#res" class="btn modal-trigger">View the Full Resume</a>
+                    <div class="modal" id="res">
+                        <div class="modal-content">
+                            <img src="img/resume.jpg" alt="Resume">
+                        </div>
+                        <div class="modal-footer center-align">
+                            <a href="#" class="modal-close btn indigo">OK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h4>You can reach me out on</h4>
+                    <ul>
+                        <li><a href="#" class="grey-text text-lighten-3">Linkedin</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Footer -->
+        
+        <div class="footer-copyright black lighten-1">
+            <div class="container center-align">
+                &copy; 2020 Vinit Soni
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.carousel').carousel();
+            $('.materialboxed').materialbox();
+            $('.modal').modal();
+            $('.tabs').tabs();
+            $('.tooltipped').tooltip();
+            $('.parallax').parallax();
+            $('.scrollspy').scrollSpy();
+            $('.collapsible').collapsible();
+            $('.tap-target').tapTarget();
+            $('.tap-target').tapTarget('open');
+            
+        });
+    </script>
+</body>
+</html>
